@@ -11,6 +11,7 @@ $color-gray-dark-1: #54483a;
 $color-gray-dark-2: #6d5d4b;
 
 $color-white: #fff;
+$color-shadow: #000;
 
 // FONT VARIABLES
 $font-primary: 'Nunito', sans-serif;
@@ -41,9 +42,7 @@ body {
 	grid-template-rows: 80vh min-content 40vw repeat(3, min-content); // 1140/8 - 142.5 ~ 14rem
 	grid-template-columns:
 		[sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr)
-		[center-start] repeat(
-			8,
-			[col-start] minmax(min-content, 14rem) [col-end]
-		) [center-end] minmax(6rem, 1fr)
+		[center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+		[center-end] minmax(6rem, 1fr)
 		[full-end];
 }
